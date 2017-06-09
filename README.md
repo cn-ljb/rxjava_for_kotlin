@@ -1,4 +1,4 @@
-#RxJava and Kotlin on Android
+# RxJava and Kotlin on Android
 
 
 >本项目将 [rxjava for android](https://github.com/cn-ljb/rxjava_for_android "rxjava_for_android") 项目Java代码使用Kotlin重新实现
@@ -9,7 +9,7 @@
 
 
 
-对学习Kotlin的建议：
+Kotlin学习路线：
 
 官网：[http://kotlinlang.org/docs/reference/](http://kotlinlang.org/docs/reference/)
 
