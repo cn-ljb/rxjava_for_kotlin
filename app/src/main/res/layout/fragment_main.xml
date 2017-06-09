@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_net"
+            style="@style/style_btn"
+            android:text="@string/btn_net_request" />
+
+        <Button
+            android:id="@+id/btn_net2"
+            style="@style/style_btn"
+            android:text="@string/btn_net_request2" />
+
+        <Button
+            android:id="@+id/btn_not_more_click"
+            style="@style/style_btn"
+            android:text="@string/btn_not_more_click" />
+
+        <Button
+            android:id="@+id/btn_checkbox_state_update"
+            style="@style/style_btn"
+            android:text="@string/btn_checkbox_state_update" />
+
+        <Button
+            android:id="@+id/btn_text_change"
+            style="@style/style_btn"
+            android:text="@string/btn_text_change" />
+
+        <Button
+            android:id="@+id/btn_buffer"
+            style="@style/style_btn"
+            android:text="@string/btn_buffer" />
+
+        <Button
+            android:id="@+id/btn_zip"
+            style="@style/style_btn"
+            android:text="@string/btn_zip" />
+
+        <Button
+            android:id="@+id/btn_concat"
+            style="@style/style_btn"
+            android:text="@string/btn_concat" />
+
+        <Button
+            android:id="@+id/btn_loop"
+            style="@style/style_btn"
+            android:text="@string/btn_loop" />
+
+        <Button
+            android:id="@+id/btn_timer"
+            style="@style/style_btn"
+            android:text="@string/btn_timer" />
+
+        <Button
+            android:id="@+id/btn_publish"
+            style="@style/style_btn"
+            android:text="@string/btn_publish" />
+
+        <Button
+            android:id="@+id/btn_rxbus"
+            style="@style/style_btn"
+            android:text="@string/btn_rxbus" />
+
+        <Button
+            android:id="@+id/btn_reuse_subscriber"
+            style="@style/style_btn"
+            android:text="@string/btn_reuse_subscriber" />
+
+    </LinearLayout>
+</ScrollView>
