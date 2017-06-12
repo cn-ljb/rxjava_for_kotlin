@@ -23,8 +23,9 @@ import java.util.concurrent.TimeUnit
  */
 class LoopFragment : Fragment() {
 
-    private var mLoopDisposable: Disposable? = null
     private val mData = intArrayOf(R.drawable.pic_1, R.drawable.pic_2, R.drawable.pic_3)
+
+    private var mLoopDisposable: Disposable? = null
     private var mLoopAdapter: PicLoopAdapter? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -41,7 +42,7 @@ class LoopFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        RxUtils.dispose(mLoopDisposable)
+        stopLoop()
     }
 
     private fun initListener() {
@@ -50,8 +51,12 @@ class LoopFragment : Fragment() {
         }
 
         btn_stop_loop.setOnClickListener {
-            RxUtils.dispose(mLoopDisposable)
+            stopLoop()
         }
+    }
+
+    private fun stopLoop() {
+        RxUtils.dispose(mLoopDisposable)
     }
 
 
@@ -61,7 +66,7 @@ class LoopFragment : Fragment() {
             mLoopDisposable = Observable.interval(3000, 3000, TimeUnit.MILLISECONDS)
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe {
-                        viewpager.currentItem = viewpager.currentItem + 1
+                        viewpager.currentItem++
                     }
         }
     }

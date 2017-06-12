@@ -28,6 +28,7 @@ import com.ljb.rxjava.kotlin.R;
  *         http://www.apache.org/licenses/LICENSE-2.0
  */
 public class ProgressWheel extends View {
+
     private static final String TAG = ProgressWheel.class.getSimpleName();
 
     /**

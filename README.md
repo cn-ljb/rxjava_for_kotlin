@@ -9,8 +9,12 @@
 
 
 
-Kotlin学习路线：
+### Kotlin学习路线
 
 官网：[http://kotlinlang.org/docs/reference/](http://kotlinlang.org/docs/reference/)
 
-中文翻译：[https://github.com/huanglizhuo/kotlin-in-chinese](https://github.com/huanglizhuo/kotlin-in-chinese "kotlin-in-chinese")
+中文翻译：[https://github.com/huanglizhuo/kotlin-in-chinese](https://github.com/huanglizhuo/kotlin-in-chinese "kotlin-in-chin[https://developer.android.com/studio/preview/index.html](https://developer.android.com/studio/preview/index.html)ese")
+
+
+
+### Android Kotlin 环境搭建 [点击这里](kotlin2android.md)

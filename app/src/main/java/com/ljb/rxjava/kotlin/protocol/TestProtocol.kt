@@ -7,7 +7,7 @@ import com.ljb.rxjava.kotlin.net.XgoHttpClient
  */
 class TestProtocol : BaseProtocol() {
 
-    val URL = "http://integer.wang/init/json.shtml";
+    val URL = "http://integer.wang/init/json.shtml"
 
     //get
     fun testGetRequest() = createObservable(URL, XgoHttpClient.METHOD_GET)
@@ -15,8 +15,7 @@ class TestProtocol : BaseProtocol() {
     //post
     fun testPostRequest(params: Map<String, String>) = createObservable(URL, XgoHttpClient.METHOD_POST, params)
 
-
-    //post
+    //put
     fun testPutRequest(params: Map<String, String>) = createObservable(URL, XgoHttpClient.METHOD_PUT, params)
 
     //delete
