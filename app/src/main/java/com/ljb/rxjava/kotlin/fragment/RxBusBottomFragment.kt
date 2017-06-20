@@ -23,7 +23,7 @@ class RxBusBottomFragment : Fragment() {
     private var mDisposable: Disposable? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_rxbus_bottom, null);
+        return inflater.inflate(R.layout.fragment_rxbus_bottom, null)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class RxBusBottomFragment : Fragment() {
 
     private fun initData() {
         if (activity is MainActivity) {
-            val publish = (activity as MainActivity).mRxBus.toObserverable().publish()
+            val publish = (activity as MainActivity).mRxBus.toObservable().publish()
 
             //订阅1
             publish.filter {

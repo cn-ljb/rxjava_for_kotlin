@@ -18,7 +18,7 @@ class RxBus {
         _bus.onNext(o)
     }
 
-    fun toObserverable(): PublishSubject<Any> {
+    fun toObservable(): PublishSubject<Any> {
         return _bus
     }
 

@@ -3,6 +3,7 @@ package com.ljb.rxjava.kotlin.log
 import android.util.Log
 
 class XgoLog @Throws(InstantiationException::class)
+
 private constructor() {
 
     init {
