@@ -48,8 +48,8 @@ class NetFragment : Fragment(), View.OnClickListener {
         RxUtils.dispose(mDelDisposable)
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
+    override fun onClick(v: View) {
+        when (v.id) {
             R.id.btn_get -> requestGet()
             R.id.btn_post -> requestPost()
             R.id.btn_put -> requestPut()

@@ -121,7 +121,7 @@ private constructor() {
 
         /** 以级别为 e 的形式输出LOG  */
 
-        fun e(msg: String) {
+        fun e(msg: String?) {
 
             if (mDebuggable >= LEVEL_ERROR) {
 

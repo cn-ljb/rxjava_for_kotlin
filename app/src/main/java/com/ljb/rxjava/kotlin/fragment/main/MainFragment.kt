@@ -40,6 +40,7 @@ class MainFragment : Fragment(), View.OnClickListener {
         btn_publish.setOnClickListener(this)
         btn_rxbus.setOnClickListener(this)
         btn_reuse_subscriber.setOnClickListener(this)
+        btn_map.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -57,6 +58,7 @@ class MainFragment : Fragment(), View.OnClickListener {
             R.id.btn_publish -> open(PublishSubjectFragment())
             R.id.btn_rxbus -> open(RxBusFragment())
             R.id.btn_reuse_subscriber -> open(ReuseSubscriberFragment())
+            R.id.btn_map -> open(MapFragment())
         }
     }
 

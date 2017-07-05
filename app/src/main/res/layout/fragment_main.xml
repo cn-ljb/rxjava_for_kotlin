@@ -73,5 +73,10 @@
             style="@style/style_btn"
             android:text="@string/btn_reuse_subscriber" />
 
+        <Button
+            android:id="@+id/btn_map"
+            style="@style/style_btn"
+            android:text="@string/btn_map" />
+
     </LinearLayout>
 </ScrollView>

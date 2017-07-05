@@ -45,4 +45,6 @@
     <string name="Observable1">被订阅者1</string>
     <string name="Observable2">被订阅者2</string>
     <string name="des_demo_reuse">这是一个演示一个订阅者订阅多个被订阅者Demo</string>
+    <string name="map">map操作符</string>
+    <string name="btn_map">map操作符</string>
 </resources>
