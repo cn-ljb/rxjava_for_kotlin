@@ -7,15 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.ljb.rxjava.kotlin.R
-import com.ljb.rxjava.kotlin.log.XgoLog
+import com.ljb.rxjava.kotlin.utils.RxUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.fragment_map.*
 
 /**
  * Created by L on 2017/7/5.
  */
 class MapFragment : Fragment() {
+
+    private var mMapDisposable: Disposable? = null
 
     override fun onCreateView(inflater: LayoutInflater, @Nullable container: ViewGroup?, @Nullable savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_map, null)
@@ -26,24 +30,32 @@ class MapFragment : Fragment() {
         initData()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        RxUtils.dispose(mMapDisposable)
+    }
+
     private fun initData() {
         val list = ArrayList<String>()
         list.add("1")
         list.add("2")
         list.add("3")
+
+        tv_result.text = list.toString();
+
         demoMap(list)
     }
 
     private fun demoMap(list: ArrayList<String>) {
-        Observable.just(list)
+        mMapDisposable = Observable.just(list)
                 .map {
                     updateList(it)
                 }.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
-                    XgoLog.i(it.toString())
-                } , {
-                    XgoLog.e(it.message)
+                    tv_result.text = it.toString()
+                }, {
+                    tv_result.text = it.message
                 })
     }
 

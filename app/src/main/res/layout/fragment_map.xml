@@ -8,4 +8,8 @@
         style="@style/style_text"
         android:text="@string/map" />
 
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/style_text" />
+
 </LinearLayout>

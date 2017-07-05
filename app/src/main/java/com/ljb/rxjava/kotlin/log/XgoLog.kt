@@ -49,7 +49,7 @@ private constructor() {
 
         /** 以级别为v 的形式输出LOG  */
 
-        fun v(msg: String) {
+        fun v(msg: String?) {
 
             if (mDebuggable >= LEVEL_VERBOSE) {
 
@@ -61,7 +61,7 @@ private constructor() {
 
         /** 以级别为 d 的形式输出LOG  */
 
-        fun d(msg: String) {
+        fun d(msg: String?) {
 
             if (mDebuggable >= LEVEL_DEBUG) {
 
@@ -73,7 +73,7 @@ private constructor() {
 
         /** 以级别为 i 的形式输出LOG  */
 
-        fun i(msg: String) {
+        fun i(msg: String?) {
 
             if (mDebuggable >= LEVEL_INFO) {
 
@@ -85,7 +85,7 @@ private constructor() {
 
         /** 以级别为 w 的形式输出LOG  */
 
-        fun w(msg: String) {
+        fun w(msg: String?) {
 
             if (mDebuggable >= LEVEL_WARN) {
 
