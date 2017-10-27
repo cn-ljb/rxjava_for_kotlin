@@ -17,4 +17,7 @@
 
 
 
-### Android Kotlin 环境搭建 [点击这里](kotlin2android.md)
+### Android Kotlin 环境搭建 
+
+* 升级Android Studo 到 3.0版本
+* 或者3.0版本手动安装Kotlin插件进行支持 [点击这里](kotlin2android.md)
